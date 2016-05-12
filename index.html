@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    
+    <title>vibrar</title>
+    
+    <!--grupo CSS-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="js/app6.min.css">
+    
+    <!--grupo JavaScript-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/acciones.js" type="text/javascript"></script>
+
+    <script src="phonegap.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    <div data-role="page" class="ui-content">
+      <div data-role="header" data-position="fixed" data-tap-toggle="false">
+          <h1> Prueba 9 </h1>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+          <div align="center">
+              <div style="width:50%">
+                  <a href="#Pagina1" id="btnvibrar" class="ui-btn ui-btn-corner-all ui-icon-action ui-btn-icon-right ui-shadow"> Acelerometro </a>
+                  <a href="#Pagina2" id="btnvibrar" class="ui-btn ui-btn-corner-all ui-icon-action ui-btn-icon-right ui-shadow"> geolocalizacion </a>
+                  <a href="#Pagina3" id="btnvibrar" class="ui-btn ui-btn-corner-all ui-icon-action ui-btn-icon-right ui-shadow"> Camara </a>
+              </div><!--estilo ancho 50%-->
+          </div><!--center-->
+      </div><!--main--->
+      
+      
+      <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+      	<h2 style="color:#CFF"> @Jordan Vazquez Garcia</h2>
+          <center>
+            <img src="res/android/mdpi.png" width="48" height="48">
+          </center>
+      </div>
+    </div>
+    
+    <div data-role="page" id="Pagina1" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Prueba 9 </h1>
+      </div>
+      <div data-role="main" class="ui-content">
+      	<div>
+          <h2>ACELEROMETRO</h2>
+          <div align="center" id="acelerometro">
+           Esperando......
+		   </div>
+			<a data-role="button" data-theme="e" href="#" onClick="Detente();">Detener</a>
+        </div>  
+      </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+        <h4>Jordan Vazquez Garcia</h4>
+        <img src="res/android/mdpi.png" width="56" height="46">
+      </div> 	
+    </div>
+    
+    
+    
+    <div data-role="page" id="Pagina2" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Prueba 9 </h1>
+      </div>
+      <div data-role="main" class="ui-content">
+      	<div>
+          <h2>GEOLOCALIZACION</h2>
+          <div align="center" id="geolocalizacion">
+           Esperando......
+		   </div>
+			<a data-role="button" data-theme="e" href="#" onClick="Detente();">Detener</a>
+        </div>  
+      </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+        <h4>Jordan Vazquez Garcia</h4>
+        <img src="res/android/mdpi.png" width="56" height="46">
+      </div> 	
+    </div>
+    
+    
+    <div data-role="page" id="Pagina3" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Prueba 9 </h1>
+      </div>
+      <div data-role="main" class="ui-content">
+      	<div>
+          <h2>CAMARA</h2>
+          <div align="center" id="">
+           Esperando......
+		   </div>
+			<a data-role="button" data-theme="e" href="#" onClick="Detente();">Detener</a>
+        </div>  
+      </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+        <h4>Jordan Vazquez Garcia</h4>
+        <img src="res/android/mdpi.png" width="56" height="46">
+      </div> 	
+    </div>
+    
+  </body>
+</html>
