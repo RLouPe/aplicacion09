@@ -16,10 +16,6 @@
     <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
     <script src="js/acciones.js" type="text/javascript"></script>
     <script src="phonegap.js"></script>
-    
-    
-    <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
-  </head>
   </head>
   
   <body>
@@ -32,7 +28,7 @@
           <div align="center">
               <div style="width:50%">
                   <!--<a href="#Pagina1" id="btnvibrar" class="ui-btn ui-btn-corner-all ui-icon-action ui-btn-icon-right ui-shadow"> Acelerometro </a>-->
-                  <a href="#Pagina2" id="btnvibrar" class="ui-btn ui-btn-corner-all ui-icon-action ui-btn-icon-right ui-shadow"> Ubicame </a>
+                  <a href="#datos" id="localizar" class="ui-btn ui-icon-eye ui-btn-icon-left ui-shadow">Ubicame</a>
                   <!--<a href="#Pagina3" id="btnvibrar" class="ui-btn ui-btn-corner-all ui-icon-action ui-btn-icon-right ui-shadow"> Camara </a>-->
               </div><!--estilo ancho 50%-->
           </div><!--center-->
@@ -66,10 +62,11 @@
     
     
     
-    <div data-role="page" id="Pagina2" data-theme="a">
+    <div data-role="page" id="datos" data-theme="a">
       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
         <h1> Prueba 9 </h1>
       </div>
+      
       <div data-role="main" class="ui-content">
 		Tus Datos de ubicacion son
           <div align="center" id="geolocalizacion">

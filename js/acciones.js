@@ -2,7 +2,7 @@ $(document).ready(function(e) {
 	document.addEventListener("deviceready", onDeviceReady, false);
 	function onDeviceReady(){
 		
-		$('#geolocalizacion').on('tap',function(){
+		$('#localizar').on('tap',function(){
 			navigator.geolocation.getCurrentPosition( function (position){
 				$('#geolocalizacion').html('Latitude: ' + posicion.coords.latitude + '\n' +
 							'Longitude: ' + posicion.coords.longitude + '\n' +
@@ -14,6 +14,10 @@ $(document).ready(function(e) {
 							'Intervalo: ' + posicion.timestamp + '\n');
 			}, $('#geolocalizacion').html('error en la localizacion'));
 		});
+			function Detente(){
+			navigator.accelerometer.clearWatch(watchID);
+			watchID = null;
+		}
 	}
 	//watchID se refiere a la aceleracion 'actual'
 	//
@@ -39,7 +43,6 @@ $(document).ready(function(e) {
 	}
 	
 	function Detente(){
-		if (watchID) {
 			navigator.accelerometer.clearWatch(watchID);
 			watchID = null;
 		}
