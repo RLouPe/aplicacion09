@@ -14,10 +14,6 @@ $(document).ready(function(e) {
 							'Intervalo: ' + posicion.timestamp + '\n');
 			}, $('#geolocalizacion').html('error en la localizacion'));
 		});
-			function Detente(){
-			navigator.accelerometer.clearWatch(watchID);
-			watchID = null;
-		}
 	}
 	//watchID se refiere a la aceleracion 'actual'
 	//
