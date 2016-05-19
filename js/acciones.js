@@ -1,7 +1,24 @@
 $(document).ready(function(e) {
+	document.addEventListener("deviceready", onDeviceReady, false);
+	function onDeviceReady(){
+		
+		$('#geolocalizacion').on('tap',function(){
+			navigator.geolocation.getCurrentPosition( function (position){
+				$('#geolocalizacion').html('Latitude: ' + posicion.coords.latitude + '\n' +
+							'Longitude: ' + posicion.coords.longitude + '\n' +
+							'Altitud: ' + posicion.coords.altitude + '\n' +
+							'Precision: ' + posicion.coords.acuracy + '\n' +
+							'Precision de Altitud: ' + posicion.coords.altitudeAccuracy + '\n' +
+							'Heading: ' + posicion.coords.heading + '\n' +
+							'Velocidad: ' + posicion.coords.speed + '\n' +
+							'Intervalo: ' + posicion.timestamp + '\n');
+			}, $('#geolocalizacion').html('error en la localizacion'));
+		});
+	}
 	//watchID se refiere a la aceleracion 'actual'
 	//
-	var watchID = null;
+	
+	/*var watchID = null;
 	
     document.addEventListener('deviceready', Dispositivo_Listo,false);
 	
@@ -66,4 +83,4 @@ $(document).ready(function(e) {
 //		$('#btnvibrar').on('tap', function () {
 //			navigator.notification.vibrate(2000);
 //		});
-//	});
+//	*/});
